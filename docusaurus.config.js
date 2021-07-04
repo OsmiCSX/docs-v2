@@ -84,6 +84,23 @@ module.exports = {
       // ],
       copyright: `Copyright &copy; ${new Date().getFullYear()} OsmiCSX. Built with Docusaurus.`,
     },
+    algolia: {
+      apiKey: '93e4892f05bb45f45fe60af0a02c950c',
+      indexName: 'dev_osmicsx',
+      contextualSearch: true,
+    },
+    metadatas: [
+      {
+        property: 'og:image',
+        content: 'https://osmicsx.dev/img/docusaurus.png',
+      },
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {
+        name: 'twitter:image',
+        content: 'https://osmicsx.dev/img/docusaurus.png',
+      },
+      {name: 'twitter:site', content: '@osmicsx'},
+    ],
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
