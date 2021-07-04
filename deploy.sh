@@ -15,5 +15,5 @@ read pagecommit
 git commit -m "deploy: $pagecommit"
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git subtree push --prefix build origin gh-pages
-#git push origin `git subtree split --prefix dist master`:gh-pages --force
+#git subtree push --prefix build origin gh-pages
+git push origin `git subtree split --prefix build main`:gh-pages --force
