@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>OsmiCSX Blog</title>
+        <link>https://osmicsx.github.io/blog</link>
+        <description>OsmiCSX Blog</description>
+        <lastBuildDate>Sun, 04 Jul 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Official Release v0.6]]></title>
+            <link>https://osmicsx.github.io/blog/2021/07/04/official-release-v0-6</link>
+            <guid>2021/07/04/official-release-v0-6</guid>
+            <pubDate>Sun, 04 Jul 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[It has been 8 months since last update v0.5.1. After preparing carefully, we finally develop a new version of OsmiCSX and complete on July 2021. So, what's new inside OsmiCSX v0.6 ?]]></description>
+        </item>
+    </channel>
+</rss>
