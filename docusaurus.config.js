@@ -21,12 +21,17 @@ module.exports = {
       },
       items: [
         {
+          type: 'docsVersionDropdown',
+          position: 'left',
+          dropdownActiveClassDisabled: true,
+        },
+        {
           type: 'doc',
           docId: 'intro',
-          position: 'left',
+          position: 'right',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'right'},
         {
           href: 'https://github.com/OsmiCSX/osmicsx',
           label: 'GitHub',
@@ -89,8 +94,9 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: true,
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://github.com/OsmiCSX/docs-v2',
         },
