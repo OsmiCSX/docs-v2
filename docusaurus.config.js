@@ -86,6 +86,7 @@ module.exports = {
     },
     algolia: {
       apiKey: '93e4892f05bb45f45fe60af0a02c950c',
+      appId: '6SLKHSIPOA',
       indexName: 'dev_osmicsx',
       contextualSearch: true,
     },

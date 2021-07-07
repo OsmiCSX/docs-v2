@@ -3,6 +3,8 @@ sidebar_position: 5
 ---
 
 # Line Height
+
+## Line Height
 Utilities for controlling the leading (line height) of an element.
 
 Namespace | Output
@@ -21,3 +23,14 @@ Namespace | Output
 **leading-8** | `{ lineHeight: 32 }`
 **leading-9** | `{ lineHeight: 36 }`
 **leading-10** | `{ lineHeight: 40 }`
+
+## Custom Line Height
+If you didn't get suitable line height for your project app, you can define your line height by adding in `CustomTheme.js` file:
+```javascript
+export default {
+  // line height
+  lineHeight: {
+    "leading-big": { lineHeight: 14 }
+  }
+}
+```
