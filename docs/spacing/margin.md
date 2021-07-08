@@ -43,11 +43,11 @@ Namespace | Output
 **my-16** | `{ marginTop: 64, marginBottom: 64 }`
 **my-20** | `{ marginTop: 80, marginBottom: 80 }`
 **my-24** | `{ marginTop: 96, marginBottom: 96 }`
-**my-32** | `{ marginTop: 12, marginBottom: 128 }`
-**my-40** | `{ marginTop: 16, marginBottom: 160 }`
-**my-48** | `{ marginTop: 19, marginBottom: 192 }`
-**my-56** | `{ marginTop: 22, marginBottom: 224 }`
-**my-64** | `{ marginTop: 25, marginBottom: 256 }`
+**my-32** | `{ marginTop: 128, marginBottom: 128 }`
+**my-40** | `{ marginTop: 160, marginBottom: 160 }`
+**my-48** | `{ marginTop: 192, marginBottom: 192 }`
+**my-56** | `{ marginTop: 224, marginBottom: 224 }`
+**my-64** | `{ marginTop: 256, marginBottom: 256 }`
 **my-px** | `{ marginTop: 2, marginBottom: 2}`
 **mx-0** | `{ marginRight: 0, marginLeft: 0 }`
 **mx-1** | `{ marginRight: 4 , marginLeft: 4 }`
@@ -64,11 +64,11 @@ Namespace | Output
 **mx-16** | `{ marginRight: 64, marginLeft: 64 }`
 **mx-20** | `{ marginRight: 80, marginLeft: 80 }`
 **mx-24** | `{ marginRight: 96, marginLeft: 96 }`
-**mx-32** | `{ marginRight: 12, marginLeft: 128 }`
-**mx-40** | `{ marginRight: 16, marginLeft: 160 }`
-**mx-48** | `{ marginRight: 19, marginLeft: 192 }`
-**mx-56** | `{ marginRight: 22, marginLeft: 224 }`
-**mx-64** | `{ marginRight: 25, marginLeft: 256 }`
+**mx-32** | `{ marginRight: 128, marginLeft: 128 }`
+**mx-40** | `{ marginRight: 160, marginLeft: 160 }`
+**mx-48** | `{ marginRight: 192, marginLeft: 192 }`
+**mx-56** | `{ marginRight: 224, marginLeft: 224 }`
+**mx-64** | `{ marginRight: 256, marginLeft: 256 }`
 **mx-px** | `{ marginRight: 2, marginLeft: 2 }`
 **mt-0** | `{ marginTop: 0 }`
 **mt-1** | `{ marginTop: 4 }`
@@ -195,11 +195,11 @@ Namespace | Output
 **-my-16** | `{ marginTop: -64, marginBottom: -64 }`
 **-my-20** | `{ marginTop: -80, marginBottom: -80 }`
 **-my-24** | `{ marginTop: -96, marginBottom: -96 }`
-**-my-32** | `{ marginTop: -12, marginBottom: -128 }`
-**-my-40** | `{ marginTop: -16, marginBottom: -160 }`
-**-my-48** | `{ marginTop: -19, marginBottom: -192 }`
-**-my-56** | `{ marginTop: -22, marginBottom: -224 }`
-**-my-64** | `{ marginTop: -25, marginBottom: -256 }`
+**-my-32** | `{ marginTop: -128, marginBottom: -128 }`
+**-my-40** | `{ marginTop: -160, marginBottom: -160 }`
+**-my-48** | `{ marginTop: -192, marginBottom: -192 }`
+**-my-56** | `{ marginTop: -224, marginBottom: -224 }`
+**-my-64** | `{ marginTop: -256, marginBottom: -256 }`
 **-my-px** | `{ marginTop: -2, marginBottom: -2}`
 **-mx-1** | `{ marginRight: -4 , marginLeft: -4 }`
 **-mx-2** | `{ marginRight: -8 , marginLeft: -8 }`
@@ -215,11 +215,11 @@ Namespace | Output
 **-mx-16** | `{ marginRight: -64, marginLeft: -64 }`
 **-mx-20** | `{ marginRight: -80, marginLeft: -80 }`
 **-mx-24** | `{ marginRight: -96, marginLeft: -96 }`
-**-mx-32** | `{ marginRight: -12, marginLeft: -128 }`
-**-mx-40** | `{ marginRight: -16, marginLeft: -160 }`
-**-mx-48** | `{ marginRight: -19, marginLeft: -192 }`
-**-mx-56** | `{ marginRight: -22, marginLeft: -224 }`
-**-mx-64** | `{ marginRight: -25, marginLeft: -256 }`
+**-mx-32** | `{ marginRight: -128, marginLeft: -128 }`
+**-mx-40** | `{ marginRight: -160, marginLeft: -160 }`
+**-mx-48** | `{ marginRight: -192, marginLeft: -192 }`
+**-mx-56** | `{ marginRight: -224, marginLeft: -224 }`
+**-mx-64** | `{ marginRight: -256, marginLeft: -256 }`
 **-mx-px** | `{ marginRight: -2, marginLeft: -2 }`
 **-mt-1** | `{ marginTop: -4 }`
 **-mt-2** | `{ marginTop: -8 }`
