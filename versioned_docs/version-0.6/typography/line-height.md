@@ -30,7 +30,8 @@ If you didn't get suitable line height for your project app, you can define your
 export default {
   // line height
   lineHeight: {
-    "leading-big": { lineHeight: 14 }
+    "big": { lineHeight: 14 }
   }
 }
 ```
+you can use it with syntax `leading-big`

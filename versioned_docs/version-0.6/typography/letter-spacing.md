@@ -22,7 +22,8 @@ If you didn't get suitable letter spacing for your project app, you can define y
 export default {
   // letter spacing
   letterSpacing: {
-    "tracking-big": { letterSpacing: 14 }
+    "big": { letterSpacing: 14 }
   }
 }
 ```
+you can use it with syntax `tracking--big`

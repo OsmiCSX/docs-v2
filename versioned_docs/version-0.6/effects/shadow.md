@@ -23,7 +23,7 @@ If you didn't get suitable shadow for your project app, you can define your shad
 export default {
   // shadow
   shadow: {
-    "shadow-big": {
+    "big": {
       shadowColor: string,
       shadowOffset: {
         width: number,
@@ -36,3 +36,4 @@ export default {
   }
 }
 ```
+you can use it with syntax `shadow-big`
