@@ -9,9 +9,9 @@ export default {
   // font family
   font: {
     family: {
-      "font-regular": { fontFamily: "Roboto-Regular" },
-      "font-medium": { fontFamily: "Roboto-Medium" },
-      "font-bold": { fontFamily: "Roboto-Bold" },
+      "font-regular": "Roboto-Regular",
+      "font-medium": "Roboto-Medium",
+      "font-bold": "Roboto-Bold",
     }
   }
 }

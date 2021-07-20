@@ -22,7 +22,7 @@ If you didn't get suitable letter spacing for your project app, you can define y
 export default {
   // letter spacing
   letterSpacing: {
-    "big": { letterSpacing: 14 }
+    "big": 14
   }
 }
 ```

@@ -27,9 +27,9 @@ export default {
   // font family
   font: {
     size: {
-      "super-big": { fontSize: 50 },
-      "super-large": { fontSize: 60 },
-      "crazy-large": { fontSize: 80 },
+      "super-big": 50,
+      "super-large": 60,
+      "crazy-large": 80,
     }
   }
 }
