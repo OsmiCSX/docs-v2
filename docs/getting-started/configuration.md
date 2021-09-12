@@ -31,6 +31,15 @@ export default {
     size: {
 	    // font size
     }
+  },
+  lineHeight: {
+    // line height
+  },
+  letterSpacing: {
+    // letter spacing
+  },
+  shadow: {
+    // shadows
   }
 }
 ```
