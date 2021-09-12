@@ -1,20 +1,48 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Scale
-Utilities for scaling elements with transform. We provide 2 helper method to scale **Width** and **Height** depend on the mobile screen.
+Control the Scale of an element using the syntax list below. It will automatically generate width based on amount.
 
-## scaleWidth
-```jsx harmony
-import { scaleWidth } from 'osmicsx'
+Syntax | Output
+--------- | ------
+**scale-{amount}** | `{ transform: [{ scale: {amount} }] }`
+**-scale-{amount}** | `{ transform: [{ scale: -{amount} }] }`
+**scale-x-{amount}** | `{ transform: [{ scaleX: {amount} }] }`
+**scale-y-{amount}** | `{ transform: [{ scaleY: {amount} }] }`
+**-scale-x-{amount}** | `{ transform: [{ scaleX: -{amount} }] }`
+**-scale-y-{amount}** | `{ transform: [{ scaleY: -{amount} }] }`
 
-scaleWidth('100%')
+## Example
+### Input
+```jsx
+apply("scale-25")
+apply("-scale-25")
+apply("scale-x-50")
+apply("scale-y-50")
+apply("-scale-x-100")
+apply("-scale-y-100")
 ```
 
-## scaleHeight
-```jsx harmony
-import { scaleHeight } from 'osmicsx'
-
-scaleHeight('100%')
+### Output
+```jsx
+{
+  transform: [{ scale: 25 }]
+}
+{
+  transform: [{ scale: -25 }]
+}
+{
+  transform: [{ scaleX: 50 }]
+}
+{
+  transform: [{ scaleY: 50 }]
+}
+{
+  transform: [{ scaleX: -100 }]
+}
+{
+  transform: [{ scaleY: -100 }]
+}
 ```

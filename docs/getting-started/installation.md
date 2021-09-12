@@ -8,10 +8,10 @@ Quick start guide for installing OsmiCSX. You need install OsmiCSX on your proje
 
 ## Installation via NPM
 ```bash
-npm i --save osmicsx
+npm i --save osmicsx@next
 ```
 
 ## Installation via Yarn
 ```bash
-yarn add osmicsx
+yarn add osmicsx@next
 ```

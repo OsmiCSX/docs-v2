@@ -64,8 +64,8 @@ Namespace | Output
 **rounded-br-full** | `{ borderBottomRightRadius: 9999 }`
 **rounded-bl-full** | `{ borderBottomLeftRadius: 9999 }`
 
-## Custom Border Width
-If you didn't get suitable border width for your project app, you can define your font size by adding in `CustomTheme.js` file:
+## Custom Border Radius
+If you didn't get suitable border radius for your project app, you can define your font size by adding in `CustomTheme.js` file:
 ```javascript
 export default {
   border: {

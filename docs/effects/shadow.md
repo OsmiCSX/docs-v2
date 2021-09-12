@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 # Shadow
+## Shadow
 Utilities for controlling the box shadow of an element.
 
 Namespace | Preview
@@ -15,3 +16,24 @@ Namespace | Preview
 **shadow-lg** | <img src="https://i.imgur.com/19sQOeb.png" />
 **shadow-xl** | <img src="https://i.imgur.com/MY3kW4f.png" />
 **shadow-2xl** | <img src="https://i.imgur.com/HNYp7jr.png" />
+
+## Custom Shadow
+If you didn't get suitable shadow for your project app, you can define your shadow by adding in `CustomTheme.js` file:
+```javascript
+export default {
+  // shadow
+  shadow: {
+    "big": {
+      shadowColor: string,
+      shadowOffset: {
+        width: number,
+        height: number
+      },
+      shadowOpacity: number,
+      shadowRadius: number,
+      elevation: number
+    }
+  }
+}
+```
+you can use it with syntax `shadow-big`
