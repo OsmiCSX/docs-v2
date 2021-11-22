@@ -7,7 +7,9 @@ sidebar_position: 2
 ## Setup
 
 ### Custom Theme
+
 Create custom file `CustomTheme.js` (_optional_)
+
 ```javascript
 export default {
   colors: {
@@ -18,19 +20,19 @@ export default {
   },
   border: {
     width: {
-	    // border width
+      // border width
     },
     radius: {
-	    // border radius
-    }
+      // border radius
+    },
   },
   font: {
     family: {
-	    // font family
+      // font family
     },
     size: {
-	    // font size
-    }
+      // font size
+    },
   },
   lineHeight: {
     // line height
@@ -40,64 +42,66 @@ export default {
   },
   shadow: {
     // shadows
-  }
-}
+  },
+};
 ```
 
 ### Provider
+
 Create OsmiProvider config file `OsmiProvider.js`
+
 ```javascript
-import { OsmiProvider } from "osmicsx"
-import CustomTheme from "./CustomTheme" // your custom style file
+import { OsmiProvider } from "osmicsx";
+import CustomTheme from "./CustomTheme"; // your custom style file
 
-const provider = new OsmiProvider(CustomTheme)
-
-export const apply = (styles) => provider.apply(styles)
-export const connect = (styles) => provider.connect(styles)
+export const { apply, connect } = OsmiProvider(CustomTheme);
 ```
 
 ## Usage
 
 ### Inline Style
+
 Use osmicsx as inline style via style attribute
+
 ```jsx harmony
-import { View } from "react-native"
-import { apply } from "../Themes/OsmiProvider"
+import { View } from "react-native";
+import { apply } from "../Themes/OsmiProvider";
 
 const Rectangle = () => {
-  return (
-    <View style={apply("w-100 h-100 bg-blue-500 rounded")} />
-  )
-}
+  return <View style={apply("w-100 h-100 bg-blue-500 rounded")} />;
+};
 
-export default Rectangle
+export default Rectangle;
 ```
 
 ### Separate Style File
+
 Create your styling file
+
 ```jsx harmony
-import { connect } from "../Themes/OsmiProvider"
+import { connect } from "../Themes/OsmiProvider";
 
 export default connect({
   container: "flex items-center justify-center",
-  rectangle: "w-100 h-100 bg-blue-500 rounded"
-})
+  rectangle: "w-100 h-100 bg-blue-500 rounded",
+});
 ```
 
 Import style file in your screen/component file
+
 ```jsx harmony
-import { View } from "react-native"
+import { View } from "react-native";
 
 // styles
-import styles from "./HomeScreenStyle.js"
+import styles from "./HomeScreenStyle.js";
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.rectangle} />
     </View>
-  )
-}
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;
 ```

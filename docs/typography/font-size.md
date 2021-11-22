@@ -5,23 +5,28 @@ sidebar_position: 2
 # Font Size
 
 ## Font Size
+
 Utilities for controlling the font size of an element.
 
-Namespace | Output
---------- | ------
-**text-xs** | `{ fontSize: 12 }`
-**text-sm** | `{ fontSize: 14 }`
-**text-base** | `{ fontSize: 16 }`
-**text-lg** | `{ fontSize: 18 }`
-**text-xl** | `{ fontSize: 20 }`
-**text-2xl** | `{ fontSize: 22 }`
-**text-3xl** | `{ fontSize: 24}`
-**text-4xl** | `{ fontSize: 26}`
-**text-5xl** | `{ fontSize: 28}`
-**text-6xl** | `{ fontSize: 30}`
+| Namespace     | Output             |
+| ------------- | ------------------ |
+| **text-xs**   | `{ fontSize: 12 }` |
+| **text-sm**   | `{ fontSize: 14 }` |
+| **text-base** | `{ fontSize: 16 }` |
+| **text-lg**   | `{ fontSize: 18 }` |
+| **text-xl**   | `{ fontSize: 20 }` |
+| **text-2xl**  | `{ fontSize: 22 }` |
+| **text-3xl**  | `{ fontSize: 24}`  |
+| **text-4xl**  | `{ fontSize: 26}`  |
+| **text-5xl**  | `{ fontSize: 28}`  |
+| **text-6xl**  | `{ fontSize: 30}`  |
 
 ## Custom Font Size
-If you didn't get suitable font size for your project app, you can define your font size by adding in `CustomTheme.js` file:
+
+If you didn't get suitable font size for your project app, you can define your font size by adding in `CustomTheme.js` file.
+
+### Create Pre-defined
+
 ```javascript
 export default {
   // font family
@@ -30,23 +35,42 @@ export default {
       "super-big": 50,
       "super-large": 60,
       "crazy-large": 80,
-    }
-  }
-}
+    },
+  },
+};
+```
+
+### Usage
+
+```jsx harmony
+apply("text-super-big");
 ```
 
 ## Responsive Font Size
+
 Utilities for controlling the font size of an element with automatically resize depends on device resolution.
 
-Namespace | Description
---------- | -----------
-**text-r-xs** | Responsive version for `text-xs`
-**text-r-sm** | Responsive version for `text-sm`
-**text-r-base** | Responsive version for `text-base`
-**text-r-lg** | Responsive version for `text-lg`
-**text-r-xl** | Responsive version for `text-xl`
-**text-r-2xl** | Responsive version for `text-2xl`
-**text-r-3xl** | Responsive version for `text-3xl`
-**text-r-4xl** | Responsive version for `text-4xl`
-**text-r-5xl** | Responsive version for `text-5xl`
-**text-r-6xl** | Responsive version for `text-6xl`
+### Pre-defined Responsive Size
+
+| Namespace       | Description                        |
+| --------------- | ---------------------------------- |
+| **text-r-xs**   | Responsive version for `text-xs`   |
+| **text-r-sm**   | Responsive version for `text-sm`   |
+| **text-r-base** | Responsive version for `text-base` |
+| **text-r-lg**   | Responsive version for `text-lg`   |
+| **text-r-xl**   | Responsive version for `text-xl`   |
+| **text-r-2xl**  | Responsive version for `text-2xl`  |
+| **text-r-3xl**  | Responsive version for `text-3xl`  |
+| **text-r-4xl**  | Responsive version for `text-4xl`  |
+| **text-r-5xl**  | Responsive version for `text-5xl`  |
+| **text-r-6xl**  | Responsive version for `text-6xl`  |
+
+### Dynamic Responsive Size
+
+If you want to have responsive text size based on screen width resolution. Use this syntax:
+
+Example:
+
+```jsx harmony
+apply("text/50"); // 50% of screen width resolution
+```
