@@ -35,7 +35,7 @@ Namespace | Output | Preview |
 **bg-yellow-50** | `{ backgroundColor: "rgba(255, 251, 235, 1)" }` | <div className="preview" style={{ backgroundColor: "rgba(255, 251, 235, 1)" }} />
 **bg-yellow-100** | `{ backgroundColor: "rgba(254, 243, 199, 1)" }` | <div className="preview" style={{ backgroundColor: "rgba(254, 243, 199, 1)" }} />
 **bg-yellow-200** | `{ backgroundColor: "rgba(253, 230, 138, 1)" }` | <div className="preview" style={{ backgroundColor: "rgba(253, 230, 138, 1)" }} />
-**bg-yellow-300** | `{ backgroundColor: "rgba(252, 211, 77, 1){{  }} }` | <div className="preview" style={{ backgroundColor: "rgba(252, 211, 77, 1)" }} />
+**bg-yellow-300** | `{ backgroundColor: "rgba(252, 211, 77, 1)" }` | <div className="preview" style={{ backgroundColor: "rgba(252, 211, 77, 1)" }} />
 **bg-yellow-400** | `{ backgroundColor: "rgba(251, 191, 36, 1)" }` | <div className="preview" style={{ backgroundColor: "rgba(251, 191, 36, 1)" }} />
 **bg-yellow-500** | `{ backgroundColor: "rgba(245, 158, 11, 1)" }` | <div className="preview" style={{ backgroundColor: "rgba(245, 158, 11, 1)" }} />
 **bg-yellow-600** | `{ backgroundColor: "rgba(217, 119, 6, 1)" }` | <div className="preview" style={{ backgroundColor: "rgba(217, 119, 6, 1)" }} />
