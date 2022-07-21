@@ -23,7 +23,7 @@ Utilities for controlling the font size of an element.
 
 ## Custom Font Size
 
-If you didn't get suitable font size for your project app, you can define your font size by adding in `CustomTheme.js` file.
+If you didn't get suitable font size for your project app, you can define your font size by adding in `osmi.config.js` file.
 
 ### Create Pre-defined
 

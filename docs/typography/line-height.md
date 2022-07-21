@@ -27,7 +27,7 @@ Utilities for controlling the leading (line height) of an element.
 
 ## Custom Line Height
 
-If you didn't get suitable line height for your project app, you can define your line height by adding in `CustomTheme.js` file:
+If you didn't get suitable line height for your project app, you can define your line height by adding in `osmi.config.js` file:
 
 ```javascript
 export default {

@@ -1,15 +1,21 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # Z-Index
+
 Utilities for controlling the stack order of an element.
 
-Namespace | Output
---------- | ------
-**z-0** | `{ zIndex: 0 }`
-**z-10** | `{ zIndex: 10 }`
-**z-20** | `{ zIndex: 20 }`
-**z-30** | `{ zIndex: 30 }`
-**z-40** | `{ zIndex: 40 }`
-**z-50** | `{ zIndex: 50 }`
+| Namespace | Output            |
+| --------- | ----------------- |
+| **z-0**   | `{ zIndex: 0 }`   |
+| **z-10**  | `{ zIndex: 10 }`  |
+| **z-20**  | `{ zIndex: 20 }`  |
+| **z-30**  | `{ zIndex: 30 }`  |
+| **z-40**  | `{ zIndex: 40 }`  |
+| **z-50**  | `{ zIndex: 50 }`  |
+| **z-60**  | `{ zIndex: 60 }`  |
+| **z-70**  | `{ zIndex: 70 }`  |
+| **z-80**  | `{ zIndex: 80 }`  |
+| **z-90**  | `{ zIndex: 90 }`  |
+| **z-100** | `{ zIndex: 100 }` |

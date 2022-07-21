@@ -8,7 +8,7 @@ For font family, you need to import your custom font family and register it usin
 
 ## Create Pre-defined
 
-open your `CustomTheme.js` that used for OsmiProvider, make the pre-defined style like this:
+open your `osmi.config.js` that used for OsmiProvider, make the pre-defined style like this:
 
 ```jsx harmony
 export default {

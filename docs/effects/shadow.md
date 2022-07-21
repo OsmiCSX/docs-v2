@@ -25,7 +25,7 @@ If you didn't get suitable shadow for your project app.
 
 ### Create Pre-defined
 
-You can define your shadow by adding in `CustomTheme.js` file:
+You can define your shadow by adding in `osmi.config.js` file:
 
 ```javascript
 export default {

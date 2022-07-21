@@ -19,7 +19,7 @@ Utilities for controlling the tracking (letter spacing) of an element.
 
 ## Custom Letter Spacing
 
-If you didn't get suitable letter spacing for your project app, you can define your letter spacing by adding in `CustomTheme.js` file:
+If you didn't get suitable letter spacing for your project app, you can define your letter spacing by adding in `osmi.config.js` file:
 
 ```javascript
 export default {

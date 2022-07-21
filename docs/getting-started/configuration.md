@@ -8,9 +8,9 @@ sidebar_position: 2
 
 ### Custom Theme
 
-Create custom file `CustomTheme.js` (_optional_)
+Create custom file `osmi.config.js` (_optional_)
 
-```javascript
+```jsx
 export default {
   colors: {
     // custom colors
@@ -48,13 +48,18 @@ export default {
 
 ### Provider
 
-Create OsmiProvider config file `OsmiProvider.js`
+OsmiCSX includes a <OsmiProvider /> component, which makes the OsmiCSX available to the rest of your app:
 
-```javascript
+```jsx
 import { OsmiProvider } from "osmicsx";
-import CustomTheme from "./CustomTheme"; // your custom style file
+import theme from "./osmi.config.js"; // your custom style file
+import App from "App.js"; // your main app
 
-export const { apply, connect } = OsmiProvider(CustomTheme);
+return (
+  <OsmiProvider theme={theme}>
+    <App />
+  </OsmiProvider>
+);
 ```
 
 ## Usage
@@ -65,9 +70,11 @@ Use osmicsx as inline style via style attribute
 
 ```jsx harmony
 import { View } from "react-native";
-import { apply } from "../Themes/OsmiProvider";
+import { useStyles } from "osmicsx";
 
 const Rectangle = () => {
+  const { apply } = useStyles();
+
   return <View style={apply("w-100 h-100 bg-blue-500 rounded")} />;
 };
 
@@ -79,12 +86,10 @@ export default Rectangle;
 Create your styling file
 
 ```jsx harmony
-import { connect } from "../Themes/OsmiProvider";
-
-export default connect({
+export default {
   container: "flex items-center justify-center",
   rectangle: "w-100 h-100 bg-blue-500 rounded",
-});
+};
 ```
 
 Import style file in your screen/component file
@@ -93,12 +98,15 @@ Import style file in your screen/component file
 import { View } from "react-native";
 
 // styles
+import { useStyles } from "osmicsx";
 import styles from "./HomeScreenStyle.js";
 
 const HomeScreen = () => {
+  const { apply } = useStyles();
+
   return (
-    <View style={styles.container}>
-      <View style={styles.rectangle} />
+    <View style={apply(styles.container)}>
+      <View style={apply(styles.rectangle)} />
     </View>
   );
 };

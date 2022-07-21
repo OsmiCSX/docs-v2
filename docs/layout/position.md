@@ -1,11 +1,12 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Position
+
 Utilities for controlling how an element is positioned.
 
-Namespace | Output
---------- | ------
-**absolute** | `{ position: "absolute" }`
-**relative** | `{ position: "relative" }`
+| Namespace    | Output                     |
+| ------------ | -------------------------- |
+| **absolute** | `{ position: "absolute" }` |
+| **relative** | `{ position: "relative" }` |
