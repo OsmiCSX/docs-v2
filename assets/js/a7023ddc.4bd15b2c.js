@@ -1,0 +1,1 @@
+(self.webpackChunkosmicsx=self.webpackChunkosmicsx||[]).push([[1713],{7485:function(n){"use strict";n.exports=JSON.parse('{"patch":{"allTagsPath":"/blog/tags","slug":"patch","name":"patch","count":1,"permalink":"/blog/tags/patch"},"announcement":{"allTagsPath":"/blog/tags","slug":"announcement","name":"announcement","count":1,"permalink":"/blog/tags/announcement"}}')}}]);
