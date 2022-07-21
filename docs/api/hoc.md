@@ -11,7 +11,7 @@ HoC or Higher-Order Components can be used if you are still using Class Componen
 ```jsx harmony
 import { withStyles } from "osmicsx";
 
-export default class Button extends React.Component {
+class Button extends React.Component {
   render() {
     const { apply } = this.props;
 
@@ -25,6 +25,8 @@ export default class Button extends React.Component {
     );
   }
 }
+
+export default withStyles(Button);
 ```
 
 ## Return Type
