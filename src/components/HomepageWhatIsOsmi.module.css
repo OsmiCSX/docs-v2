@@ -3,6 +3,7 @@
 .wrapper {
   position: relative;
   display: flex;
+  gap: 40px;
   justify-content: space-between;
   width: 100%;
 }
@@ -56,17 +57,10 @@
   .wrapper {
     flex-direction: column;
   }
-  .right {
-    margin-top: 72px;
-  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
