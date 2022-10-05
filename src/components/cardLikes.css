@@ -1,0 +1,59 @@
+.cardLikes{
+    margin-top: 26px;
+    padding: 22px 16px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 124px rgba(0, 0, 0, 0.1);
+}
+.cardLikes h1{
+    font-size: 12px;
+    font-weight: 400;
+    color: #1E344F;
+}
+.cardNumberLikes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.numberLikes{
+    font-size: 22px;
+    font-weight: 800;
+    color: #1E344F;
+}
+.numberLikesPersen{
+    font-size: 14px;
+    color: #3734A9;
+    font-weight: 600;
+}
+.cardContainerLikesBar{
+    position: relative;
+    width: 100%;
+    height: 19px;
+    background: #E8F2FF;
+    border-radius: 12px;
+}
+.cardLikesBar{
+    width: 50%;
+    height: 100%;
+    background: #3734A9;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 425px) {
+    .numberLikes{
+        font-size: 22px;
+    }
+    .cardLikes h1{
+        margin-bottom: 7px; 
+    }
+    .numberLikes{
+        font-size: 18px;
+    }
+    .cardNumberLikes{
+        margin-bottom: 5px;
+    }
+    .cardContainerLikesBar{
+        height: 12px;
+    }
+}

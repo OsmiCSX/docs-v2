@@ -6,11 +6,38 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
 }
+.heroContainer{
+  padding: 45px 70px;
+  margin-bottom: 50px;
+}
+.heroTagline{
+  font-size: 64px;
+  font-weight: 700;
+  color: #1E344F;
+  line-height: 120%;
+}
+.heroSpan{
+  color: #FBE000;
+}
+.buttons{
+  margin-top: 50px;
+}
+
+.cardSection{
+  display: flex;
+  flex-direction: column;
+  padding: 45px 70px;
+}
+.cardFlex{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
 
 @media screen and (max-width: 966px) {
   .heroBanner {
@@ -18,8 +45,30 @@
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 768px){
+  .heroBanner{
+    max-width: 768px;
+  }
 }
+
+@media screen and (max-width: 425px){
+  .heroBanner{
+    max-width: 425px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 45px 22px;
+  }
+  .heroContainer{
+    padding: 0;
+  }
+  .heroTagline{
+    font-size: 48px;
+  }
+  .cardSection{
+    width: 100%;
+    padding: 0;
+    margin: auto;
+  }
+}
+
+
