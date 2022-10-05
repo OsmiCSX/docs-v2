@@ -4,6 +4,7 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import HomepageWhatIsOsmi from "../components/HomepageWhatIsOsmi.jsx";
+import HomepageWhyOsmi from "../components/HomepageWhyOsmi.jsx";
 import styles from "./index.module.css";
 
 function HomepageHeader() {
@@ -36,6 +37,9 @@ export default function Home() {
       <main>
         {/* What is Osmi Section */}
         <HomepageWhatIsOsmi />
+
+        {/* Why Osmi Section */}
+        <HomepageWhyOsmi />
       </main>
     </Layout>
   );
