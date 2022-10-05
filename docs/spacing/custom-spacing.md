@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Config
 
-In `osmi.config.js`, you can define custom spacing and it will automatically generate pre-defined padding & margin for you
+In `osmi.config.js`, you can define custom spacing and it will automatically generate pre-defined `padding`, `margin`, and `position (top, left, right, bottom)`
 
 Example:
 
