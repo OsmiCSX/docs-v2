@@ -4,71 +4,79 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
-.heroBanner {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1440px;
-}
-.heroContainer{
-  padding: 45px 70px;
-  margin-bottom: 50px;
-}
-.heroTagline{
-  font-size: 64px;
-  font-weight: 700;
-  color: #1E344F;
-  line-height: 120%;
-}
-.heroSpan{
-  color: #FBE000;
-}
-.buttons{
-  margin-top: 50px;
-}
-
-.cardSection{
+.heroContainer {
   display: flex;
   flex-direction: column;
-  padding: 45px 70px;
+  align-items: center;
+  padding: 25px;
 }
-.cardFlex{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+.heroTagline {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1e344f;
+  line-height: 100%;
+}
+.desc {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1e344f;
+  text-align: center;
+  line-height: 110%;
+}
+.heroSpan {
+  color: #fbe000;
 }
 
-
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
+/* SM */
+@media (min-width: 640px) {
+  .heroTagline {
+    font-size: 64px;
   }
-}
-
-@media screen and (max-width: 768px){
-  .heroBanner{
-    max-width: 768px;
-  }
-}
-
-@media screen and (max-width: 425px){
-  .heroBanner{
-    max-width: 425px;
-    flex-wrap: wrap;
-    overflow: hidden;
-    padding: 45px 22px;
-  }
-  .heroContainer{
-    padding: 0;
-  }
-  .heroTagline{
-    font-size: 48px;
-  }
-  .cardSection{
-    width: 100%;
-    padding: 0;
-    margin: auto;
+  .desc {
+    font-size: 32px;
   }
 }
 
+/* MD */
+@media (min-width: 768px) {
+  .heroTagline::before {
+    height: 30px;
+    width: 29px;
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: 24%;
+    background-image: url("/img/sphere.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
+  .heroContainer::before {
+    height: 90px;
+    width: 90px;
+    content: "";
+    position: absolute;
+    top: 13%;
+    right: 7%;
+    background-image: url("/img/rectangle-orange.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .heroContainer::after {
+    height: 41px;
+    width: 41px;
+    content: "";
+    position: absolute;
+    bottom: 30%;
+    left: 24%;
+    border-radius: 8px;
+    background-image: url("/img/rectangle-blue.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+/* LG */
+@media (min-width: 1024px) {
+}
