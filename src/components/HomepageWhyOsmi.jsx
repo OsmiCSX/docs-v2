@@ -41,9 +41,17 @@ export default function HomepageWhyOsmi() {
     <div className={styles.wrapper}>
       <img
         src="/img/whyosmi-bg.png"
-        className={styles.whyosmiBg}
+        className={styles.dekstopBg}
         alt="why-bg"
       />
+
+      <div className={styles.mobileBg}>
+        <img src="/img/home-1.png" className={styles.bgLeft} alt="why-bg" />
+        <div>
+          <div></div>
+        </div>
+        <img src="/img/home-2.png" className={styles.bgRight} alt="why-bg" />
+      </div>
 
       <div className="container">
         <h1 className={styles.title}>
