@@ -25,6 +25,7 @@ module.exports = {
           position: "left",
           dropdownActiveClassDisabled: true,
         },
+        { to: "/blog", label: "Blog", position: "left" },
         {
           type: "doc",
           docId: "intro",

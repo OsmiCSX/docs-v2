@@ -1,0 +1,159 @@
+/* stylelint-disable docusaurus/copyright-header */
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 677px;
+  margin-top: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.whyOsmiItems {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 60px;
+}
+
+.whyOsmiItems > div:first-child {
+  margin-top: 50px;
+}
+
+.whyOsmiItems > div:last-child {
+  margin-top: 60px;
+}
+
+.card {
+  position: relative;
+  max-width: 324px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 41px;
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: #1e344f;
+  margin-top: 23px;
+}
+
+.cardDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1e344f;
+  opacity: 0.7;
+}
+
+.cardBgImageOne {
+  position: absolute;
+  left: -60px;
+  bottom: -45px;
+  z-index: -1;
+}
+
+.cardBgImageTwo {
+  position: absolute;
+  right: -10px;
+  top: -60px;
+  z-index: -1;
+}
+
+.learnMore {
+  color: #3691d4;
+  cursor: pointer;
+}
+
+.title {
+  position: relative;
+  margin-top: 70px;
+  margin-left: 150px;
+  font-weight: 700;
+  font-size: 64px;
+  color: #1e344f;
+}
+
+.titleSvg {
+  position: absolute;
+  display: block;
+  left: -60px;
+  bottom: -30px;
+  z-index: -1;
+}
+
+.textPrimary {
+  color: #3691d4;
+}
+
+.dekstopBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.mobileBg {
+  display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .whyOsmiItems {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 33px;
+    margin-bottom: 72px;
+  }
+
+  .whyOsmiItems > div:first-child {
+    margin-top: 0;
+  }
+
+  .whyOsmiItems > div:last-child {
+    margin-top: 0;
+  }
+
+  .title {
+    margin: 0;
+    margin-top: 58px;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: -0.03em;
+  }
+
+  .titleSvg {
+    display: none;
+  }
+
+  .dekstopBg {
+    display: none;
+  }
+
+  .mobileBg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 130%;
+    height: 100%;
+    left: -15%;
+  }
+
+  .mobileBg > div {
+    position: relative;
+    flex: 1;
+  }
+
+  .mobileBg > div > div {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background-color: #edf2f4;
+  }
+}

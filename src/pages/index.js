@@ -1,4 +1,4 @@
-import React from "react";
+import
 // import clsx from 'clsx';
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -8,12 +8,13 @@ import Button from "../components/Button";
 import CardLatestFollower from "../components/CardLatestFollower";
 import CardFollower from "../components/CardFollower";
 import CardLikes from "../components/CardLikes";
+import HomepageWhatIsOsmi from "../components/HomepageWhatIsOsmi.jsx";
+import HomepageWhyOsmi from "../components/HomepageWhyOsmi.jsx";
 import { InstallOsmicsx } from "../components/Command";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
-  return (
-    // clsx('hero hero--primary, styles.heroBanner)',
+  return 
     <header className={styles.heroContainer}>
       <p className={styles.heroTagline}>
         Osmi<span className={styles.heroSpan}>CSX</span>{" "}
@@ -32,7 +33,6 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-
   window.onscroll = function () {
     myFunction();
   };
@@ -57,7 +57,11 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        {/* What is Osmi Section */}
+        <HomepageWhatIsOsmi />
+
+        {/* Why Osmi Section */}
+        <HomepageWhyOsmi />
       </main>
     </Layout>
   );
