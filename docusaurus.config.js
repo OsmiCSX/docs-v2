@@ -17,7 +17,7 @@ module.exports = {
       title: "OsmiCSX",
       logo: {
         alt: "OsmiCSX",
-        src: "img/logo.svg",
+        src: "img/logo.png",
       },
       items: [
         {
@@ -93,12 +93,12 @@ module.exports = {
     metadata: [
       {
         property: "og:image",
-        content: "https://osmicsx.dev/img/docusaurus.png",
+        content: "https://osmicsx.dev/img/logo.png",
       },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:image",
-        content: "https://osmicsx.dev/img/docusaurus.png",
+        content: "https://osmicsx.dev/img/logo.png",
       },
       { name: "twitter:site", content: "@osmicsx" },
     ],
