@@ -1,20 +1,15 @@
-import
-// import clsx from 'clsx';
+import React from "react";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
-import HomepageFeatures from "../components/HomepageFeatures";
 import Button from "../components/Button";
-import CardLatestFollower from "../components/CardLatestFollower";
-import CardFollower from "../components/CardFollower";
-import CardLikes from "../components/CardLikes";
 import HomepageWhatIsOsmi from "../components/HomepageWhatIsOsmi.jsx";
 import HomepageWhyOsmi from "../components/HomepageWhyOsmi.jsx";
 import { InstallOsmicsx } from "../components/Command";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
-  return 
+  return (
     <header className={styles.heroContainer}>
       <p className={styles.heroTagline}>
         Osmi<span className={styles.heroSpan}>CSX</span>{" "}
@@ -56,6 +51,7 @@ export default function Home() {
       description="OsmiCSX - An utility style framework for React Native"
     >
       <HomepageHeader />
+
       <main>
         {/* What is Osmi Section */}
         <HomepageWhatIsOsmi />

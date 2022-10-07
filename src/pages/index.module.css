@@ -4,6 +4,12 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
+header {
+  padding-top: 40px;
+}
+main {
+  margin-top: 40px;
+}
 .heroContainer {
   display: flex;
   flex-direction: column;
