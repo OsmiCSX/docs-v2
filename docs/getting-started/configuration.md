@@ -48,7 +48,7 @@ export default {
 
 ### Provider
 
-OsmiCSX includes a <OsmiProvider /> component, which makes the OsmiCSX available to the rest of your app:
+OsmiCSX includes a `<OsmiProvider />` component, which makes the OsmiCSX available to the rest of your app:
 
 ```jsx
 import { OsmiProvider } from "osmicsx";
