@@ -60,7 +60,7 @@ export default function HomepageWhyOsmi() {
             className={styles.titleSvg}
             alt="title-bg"
           />
-          What is
+          Why
           <span className={styles.textPrimary}> OsmiCSX ?</span>
         </h1>
 
