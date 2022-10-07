@@ -4,22 +4,79 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
-.heroBanner {
-  padding: 4rem 0;
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+.heroTagline {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1e344f;
+  line-height: 100%;
+}
+.desc {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1e344f;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  line-height: 110%;
+}
+.heroSpan {
+  color: #fbe000;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
+/* SM */
+@media (min-width: 640px) {
+  .heroTagline {
+    font-size: 64px;
+  }
+  .desc {
+    font-size: 32px;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* MD */
+@media (min-width: 768px) {
+  .heroTagline::before {
+    height: 30px;
+    width: 29px;
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: 24%;
+    background-image: url("/img/sphere.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .heroContainer::before {
+    height: 90px;
+    width: 90px;
+    content: "";
+    position: absolute;
+    top: 13%;
+    right: 7%;
+    background-image: url("/img/rectangle-orange.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .heroContainer::after {
+    height: 41px;
+    width: 41px;
+    content: "";
+    position: absolute;
+    bottom: 30%;
+    left: 24%;
+    border-radius: 8px;
+    background-image: url("/img/rectangle-blue.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+/* LG */
+@media (min-width: 1024px) {
 }

@@ -24,17 +24,41 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
+html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .preview {
   width: 6rem !important;
-  height: 40px
+  height: 40px;
 }
 
 .preview.bg-opacity {
   width: 103px;
   height: 64px;
-  border-radius: .375rem
+  border-radius: 0.375rem;
+}
+
+.navbar {
+  box-shadow: none;
+}
+
+.navbar-no-shadow {
+  box-shadow: none;
+}
+
+.navbar-with-shadow {
+  box-shadow: var(--ifm-navbar-shadow);
+}
+
+pre.language-shell .token-line::before {
+  content: "$ ";
+}
+
+pre.language-powershell > code::before {
+  content: "PS C:\\> ";
+}
+
+.tabs {
+  justify-content: center;
 }

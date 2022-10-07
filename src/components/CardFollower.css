@@ -1,0 +1,57 @@
+.cardFollower{
+    margin-top: 26px;
+    padding: 22px 16px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 124px rgba(0, 0, 0, 0.1);
+}
+.cardFollower h1{
+    font-size: 12px;
+    font-weight: 400;
+    color: #1E344F;
+}
+.cardNumber{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.numberFollower{
+    font-size: 22px;
+    font-weight: 800;
+    color: #1E344F;
+}
+.numberPersen{
+    font-size: 14px;
+    color: #FDBC64;
+    font-weight: 600;
+}
+.cardContainerFollowerBar{
+    position: relative;
+    width: 100%;
+    height: 19px;
+    background: #E8F2FF;
+    border-radius: 12px;
+}
+.cardFollowerBar{
+    width: 50%;
+    height: 100%;
+    background: #FDBC64;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 425px) {
+    .cardFollower{
+        width: 100%;
+    }
+    .numberFollower{
+        font-size: 22px;
+    }
+    .cardFollower h1{
+        margin-bottom: 7px;
+    }
+    .cardContainerFollowerBar{
+        height: 12px;
+    }
+    
+}

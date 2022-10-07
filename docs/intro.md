@@ -25,6 +25,7 @@ Instead of opinionated predesigned components, OsmiCSX provides low-level utilit
 - **Light & Fast**: Since we only pre-defined styles and didn't come with pre-defined UI, it will make our framework faster to load
 - **Specific Platform**: We provide platform processor so you can put style for specific platform (android/ios)
 - **Simple Inline Style**: With `apply()` method, your project code will be more clean and readable
+- **Using Hooks / HoC**: Styling with the hooks for functional component or use HoC for class component.
 
 ## Updates
 
