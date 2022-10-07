@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
@@ -28,22 +28,25 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  window.onscroll = function () {
-    myFunction();
-  };
 
-  function myFunction() {
-    if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
-    ) {
-      document.querySelector("nav.navbar").className =
-        "navbar navbar--fixed-top navbar-with-shadow";
-    } else {
-      document.querySelector("nav.navbar").className =
-        "navbar navbar--fixed-top navbar-no-shadow";
+  useEffect(() => {
+    function myFunction() {
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        document.querySelector("nav.navbar").className =
+          "navbar navbar--fixed-top navbar-with-shadow";
+      } else {
+        document.querySelector("nav.navbar").className =
+          "navbar navbar--fixed-top navbar-no-shadow";
+      }
     }
-  }
+
+    window.onscroll = function () {
+      myFunction();
+    };
+  }, []);
 
   return (
     <Layout
