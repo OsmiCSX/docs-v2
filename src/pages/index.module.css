@@ -22,6 +22,10 @@ main {
   color: #1e344f;
   line-height: 100%;
 }
+html[data-theme="dark"] .heroTagline,
+html[data-theme="dark"] .desc {
+  color: rgba(226, 232, 240, 1);
+}
 .desc {
   font-size: 24px;
   font-weight: 500;

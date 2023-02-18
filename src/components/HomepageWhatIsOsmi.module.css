@@ -42,10 +42,18 @@
   font-size: 20px;
 }
 
+html[data-theme="dark"] .cardText {
+  color: #1e344f;
+}
+
 .title {
   font-weight: 700;
   font-size: 64px;
   color: #1e344f;
+}
+
+html[data-theme="dark"] .title {
+  color: rgba(226, 232, 240, 1);
 }
 
 .textPrimary {
